@@ -24,7 +24,7 @@ export function NavbarComponent() {
             sizes="(max-width: 768px) 40vw, 14vw"
             className="sm:mx-auto"
           />
-          <div className="self-center text-sm md:text-sm lg:text-lg sm:whitespace-normal lg:whitespace-nowrap dark:text-orange-500 pl-4 block">17065 Tennessee Street - Vallejo, CA 94590&nbsp;&nbsp; <PhoneCall size={20} className="inline-block" /> <a href={`tel:707-332-9005`} className="font-bold border-none">(707) 332-9005</a>
+          <div className="self-center text-sm md:text-sm lg:text-lg sm:whitespace-normal lg:whitespace-nowrap dark:text-orange-500 pl-4 block">17065 Tennessee Street - Vallejo, CA 94590&nbsp;&nbsp; <span><PhoneCall size={20} className="inline-block" /> <a href={`tel:707-332-9005`} className="font-bold border-none">(707) 332-9005</a></span>
           </div>
         </div>
         <button
