@@ -97,7 +97,7 @@ const Home: NextPage = () => {
   
         <div className="w-max mx-auto">
           <h1
-            className="animate-typing overflow-hidden lg:overflow-hidden whitespace-normal md:whitespace-normal lg:whitespace-nowrap border-r-4 border-r-white text-4xl md:text-5xl lg:text-6xl text-orange-500 text-center font-bold py-4 text-shadow-md">
+            className="animate-typing overflow-hidden lg:overflow-hidden whitespace-normal md:whitespace-normal lg:whitespace-nowrap border-r-4 border-r-white text-3xl md:text-5xl lg:text-6xl text-orange-500 text-center font-bold py-4 text-shadow-md">
             Buy Local With Confidence!
           </h1>
         </div>
