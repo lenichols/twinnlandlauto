@@ -25,7 +25,7 @@ export function NavbarComponent() {
               height={87}
               className="h-auto w-[140px]"
             />
-            <div className="text-center md:text-left text-sm md:text-sm lg:text-lg dark:text-orange-500 mt-2 md:mt-0">
+            <div className="text-center md:text-left text-sm md:text-sm lg:text-lg dark:text-red-500 mt-2 md:mt-0">
               17065 Tennessee Street - Vallejo, CA 94590&nbsp;&nbsp;
               <span className="whitespace-nowrap">
                 <PhoneCall size={20} className="inline-block" />{" "}
@@ -71,7 +71,7 @@ export function NavbarComponent() {
         <li>
               <Link
                 href="#"
-                className="block py-2 px-3 text-white bg-orange-500 rounded-sm md:bg-transparent md:text-orange-500 md:p-0 md:dark:text-orange-400 dark:bg-orange-400 md:dark:bg-transparent"
+                className="block py-2 px-3 text-white bg-red-500 rounded-sm md:bg-transparent md:text-red-500 md:p-0 md:dark:text-red-400 dark:bg-red-400 md:dark:bg-transparent"
               >
                 Inventory & Financing
               </Link>
@@ -79,7 +79,7 @@ export function NavbarComponent() {
             <li>
               <Link
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 dark:text-white md:dark:hover:text-orange-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 dark:text-white md:dark:hover:text-red-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Other Fleet
               </Link>
@@ -87,7 +87,7 @@ export function NavbarComponent() {
             <li>
               <Link
                 href="#contact_us"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 dark:text-white md:dark:hover:text-orange-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 dark:text-white md:dark:hover:text-red-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Contact Us
               </Link>
@@ -102,7 +102,7 @@ export function NavbarComponent() {
           <li>
             <Link
               href="#"
-              className="block py-2 px-3 text-white bg-orange-500 rounded-sm"
+              className="block py-2 px-3 text-white bg-red-500 rounded-sm"
             >
               Inventory & Financing
             </Link>

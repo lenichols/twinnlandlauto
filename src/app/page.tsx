@@ -97,7 +97,7 @@ const Home: NextPage = () => {
   
         <div className="w-max mx-auto">
           <h1
-            className="lg:animate-typing overflow-hidden lg:overflow-hidden whitespace-normal md:whitespace-normal lg:whitespace-nowrap border-r-4 border-r-white text-xl md:text-5xl lg:text-6xl text-orange-500 text-center font-bold py-4 text-shadow-md">
+            className="lg:animate-typing overflow-hidden lg:overflow-hidden whitespace-normal md:whitespace-normal lg:whitespace-nowrap border-r-4 border-r-white text-xl md:text-5xl lg:text-6xl text-red-600 text-center font-bold py-4 text-shadow-md">
             Buy Local With Confidence!
           </h1>
         </div>
@@ -105,13 +105,13 @@ const Home: NextPage = () => {
             {/* <h2 className="mb-4 text-xl font-extrabold tracking-tight leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-white">In-House Financing on Approved Credit</h2> */}
             <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Experience the personal touch of a locally run business that sources quality vehicles wholesale, ensuring you get unbeatable deals every time you buy, sell, or trade.</p>
             <div className="flex flex-col space-y-6 sm:flex-row sm:justify-center sm:space-y-0">
-                <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-600 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
+                <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-black hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:focus:ring-red-900">
                     View Our Inventory
                     <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                     </svg>
                 </a>
-                <a href="#" className="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-orange-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                <a href="#" className="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-red-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                     Learn more
                 </a>  
             </div>
