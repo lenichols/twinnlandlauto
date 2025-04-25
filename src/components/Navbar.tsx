@@ -19,11 +19,11 @@ export function NavbarComponent() {
         <div className="flex flex-col items-center md:flex-row md:items-center md:space-x-4 w-full">
           <div className="flex flex-col items-center md:flex-row md:items-center md:space-x-4">
             <Image
-              src="/images/MillenniumAutoRetailers.png"
-              alt="Millennium Auto Logo"
-              width={140}
+              src="/images/twinnlandl.png"
+              alt="Twinn L&L Logo"
+              width={100}
               height={87}
-              className="h-auto w-[140px]"
+              className="h-auto w-[100px]"
             />
             <div className="text-center md:text-left text-sm md:text-sm lg:text-lg dark:text-red-500 mt-2 md:mt-0">
               17065 Tennessee Street - Vallejo, CA 94590&nbsp;&nbsp;
