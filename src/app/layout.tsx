@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Millennium Auto Retailers",
+  title: "Twinn L&L Auto Brokers",
   description: "The local retailer for your car needs. Buy, sell, or trade quality vehicles at affordable prices.",
 };
 

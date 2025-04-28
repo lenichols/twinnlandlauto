@@ -25,8 +25,8 @@ const cars: Car[] = [
   {
     id: 2,
     image: '/images/vehicles/white-toyota.png',
-    model: '2022 Toyota',
-    price: '$25,000',
+    model: '2025 Ford Explorer',
+    price: '$45,000',
   },
   {
     id: 3,
@@ -48,14 +48,14 @@ const cars: Car[] = [
   },
   {
     id: 6,
-    image: '/images/vehicles/cybertruck.png',
-    model: '2023 Cybertruck',
-    price: '$18,000',
+    image: '/images/vehicles/2025jeep.jpg',
+    model: '2025 Jeep SXT',
+    price: '$26,000',
   },
   {
     id: 7,
     image: '/images/vehicles/black-jaguar.png',
-    model: '2023 Cybertruck',
+    model: '2023 Jaguar',
     price: '$18,000',
   },
   {
