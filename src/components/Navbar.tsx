@@ -26,11 +26,11 @@ export function NavbarComponent() {
               className="h-auto w-[100px]"
             />
             <div className="text-center md:text-left text-sm md:text-sm lg:text-lg dark:text-red-500 mt-2 md:mt-0">
-              17065 Tennessee Street - Vallejo, CA 94590&nbsp;&nbsp;
+            1776 Solano Ave Suite 122 - Vallejo, CA 94590&nbsp;&nbsp;
               <span className="whitespace-nowrap">
                 <PhoneCall size={20} className="inline-block" />{" "}
                 <a href="tel:707-332-9005" className="font-bold border-none">
-                  (707) 332-9005
+                  (866)-270-4582
                 </a>
               </span>
             </div>

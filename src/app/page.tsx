@@ -19,56 +19,56 @@ const cars: Car[] = [
   {
     id: 1,
     image: '/images/vehicles/green-jeep.png',
-    model: '2023 Sedan',
+    model: '2008 Jeep Patriot',
     price: '$20,000',
   },
   {
     id: 2,
     image: '/images/vehicles/white-toyota.png',
-    model: '2025 Ford Explorer',
-    price: '$45,000',
+    model: '2017 Toyota Camry',
+    price: '$15,300',
   },
   {
     id: 3,
     image: '/images/vehicles/mercedes-suv.png',
-    model: '2023 Coupe',
-    price: '$22,000',
+    model: '2016 Mercedes Benz Gl45O',
+    price: '$16,999',
   },
   {
     id: 4,
     image: '/images/vehicles/mercedes-550-gray.png',
-    model: '2023 Coupe',
-    price: '$22,000',
+    model: '2011 Mercedes Benz CL550',
+    price: '$14,999',
   },
   {
     id: 5,
     image: '/images/vehicles/jeep.png',
-    model: '2023 Coupe',
-    price: '$22,000',
+    model: '2009 Volvo SUV',
+    price: '$10,999',
   },
   {
     id: 6,
     image: '/images/vehicles/2025jeep.jpg',
-    model: '2025 Jeep SXT',
-    price: '$26,000',
+    model: '2015 Jeep Cherokee',
+    price: '$13,999',
   },
   {
     id: 7,
     image: '/images/vehicles/black-jaguar.png',
-    model: '2023 Jaguar',
-    price: '$18,000',
+    model: '2010 Bentley Continental',
+    price: '$26,999',
   },
   {
     id: 8,
     image: '/images/vehicles/black-masarati.png',
-    model: '2023 Maserati',
-    price: '$9,500',
+    model: '2012 Maserati',
+    price: '$18,777',
   },
   {
     id: 9,
     image: '/images/vehicles/ford-caliber.png',
-    model: '2020 Ford Caliber',
-    price: '$6,000',
+    model: '2020 Ford SUV',
+    price: '$16,999',
   }
 ];
 
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
         <div className="w-max mx-auto">
           <h1
             className="lg:animate-typing overflow-hidden lg:overflow-hidden whitespace-normal md:whitespace-normal lg:whitespace-nowrap border-r-4 border-r-white text-xl md:text-5xl lg:text-6xl text-red-600 text-center font-bold py-4 text-shadow-md">
-            Buy Local With Confidence!
+            Buy With Confidence!
           </h1>
         </div>
         <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl dark:text-white">New Vehicles Added Daily</h1>
