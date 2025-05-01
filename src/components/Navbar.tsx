@@ -11,6 +11,16 @@ export function NavbarComponent() {
     initFlowbite();
   }, []);
 
+
+  const logoSwap = () => {
+    const isDarkMode = document.documentElement.classList.contains('dark');
+    if(isDarkMode) {
+      return '/images/twinnlandl-dark.png';
+      } else {
+      return '/images/twinnlandl.png';
+      }
+    }
+
   return (
     <nav className="bg-white dark:bg-black fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 shadow-md">
     <div className="max-w-screen-xl mx-auto px-4 py-4">
@@ -19,18 +29,11 @@ export function NavbarComponent() {
         <div className="flex flex-col items-center md:flex-row md:items-center md:space-x-4 w-full">
           <div className="flex flex-col items-center md:flex-row md:items-center md:space-x-4">
             <Image
-              src="/images/twinnlandl-dark.png"
+              src={logoSwap()}
               alt="Twinn L&L Logo"
               width={100}
               height={87}
-              className={`h-auto w-[100px] light:hidden`}
-            />
-            <Image
-              src="/images/twinnlandl.png"
-              alt="Twinn L&L Logo"
-              width={100}
-              height={87}
-              className={`h-auto w-[100px] dark:hidden`}
+              className={`h-auto w-[100px]`}
             />
             <div className="text-center md:text-left text-sm md:text-sm lg:text-lg dark:text-white-500 mt-2 md:mt-0">
             1817 Capital Street - Vallejo, CA 94590&nbsp;&nbsp;
