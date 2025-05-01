@@ -1,51 +1,47 @@
 'use client'
 
 import { initFlowbite } from "flowbite";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from 'next/image';
 import Link from "next/link";
 import { PhoneCall } from "lucide-react";
 
 export function NavbarComponent() {
+  const [logoSrc, setLogoSrc] = useState('/images/twinnlandl.png'); // default
+
   useEffect(() => {
     initFlowbite();
+
+    // Safe to access `document` here (client-side only)
+    const isDarkMode = document.documentElement.classList.contains('dark');
+    setLogoSrc(isDarkMode ? '/images/twinnlandl-dark.png' : '/images/twinnlandl.png');
   }, []);
 
 
-  const logoSwap = () => {
-    const isDarkMode = document.documentElement.classList.contains('dark');
-    if(isDarkMode) {
-      return '/images/twinnlandl-dark.png';
-      } else {
-      return '/images/twinnlandl.png';
-      }
-    }
-
   return (
     <nav className="bg-white dark:bg-black fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 shadow-md">
-    <div className="max-w-screen-xl mx-auto px-4 py-4">
-      <div className="relative flex flex-col md:flex-row md:items-center md:justify-between">
-        {/* Logo and Address */}
-        <div className="flex flex-col items-center md:flex-row md:items-center md:space-x-4 w-full">
-          <div className="flex flex-col items-center md:flex-row md:items-center md:space-x-4">
-            <Image
-              src={logoSwap()}
-              alt="Twinn L&L Logo"
-              width={100}
-              height={87}
-              className={`h-auto w-[100px]`}
-            />
-            <div className="text-center md:text-left text-sm md:text-sm lg:text-lg dark:text-white-500 mt-2 md:mt-0">
-            1817 Capital Street - Vallejo, CA 94590&nbsp;&nbsp;
-              <span className="whitespace-nowrap">
-                <PhoneCall size={20} className="inline-block" />{" "}
-                <a href="tel:707-332-9005" className="font-bold border-none">
-                  (866)-270-4582
-                </a>
-              </span>
+      <div className="max-w-screen-xl mx-auto px-4 py-4">
+        <div className="relative flex flex-col md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col items-center md:flex-row md:items-center md:space-x-4 w-full">
+            <div className="flex flex-col items-center md:flex-row md:items-center md:space-x-4">
+              <Image
+                src={logoSrc}
+                alt="Twinn L&L Logo"
+                width={100}
+                height={87}
+                className="h-auto w-[100px]"
+              />
+              <div className="text-center md:text-left text-sm md:text-sm lg:text-lg dark:text-white-500 mt-2 md:mt-0">
+                1817 Capital Street - Vallejo, CA 94590&nbsp;&nbsp;
+                <span className="whitespace-nowrap">
+                  <PhoneCall size={20} className="inline-block" />{" "}
+                  <a href="tel:707-332-9005" className="font-bold border-none">
+                    (866)-270-4582
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
-        </div>
   
         {/* Hamburger Menu (Mobile only) */}
         <div className="absolute right-0 top-0 md:hidden">
