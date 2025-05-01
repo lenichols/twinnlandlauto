@@ -12,21 +12,28 @@ export function NavbarComponent() {
   }, []);
 
   return (
-    <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 shadow-md">
+    <nav className="bg-white dark:bg-black fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 shadow-md">
     <div className="max-w-screen-xl mx-auto px-4 py-4">
       <div className="relative flex flex-col md:flex-row md:items-center md:justify-between">
         {/* Logo and Address */}
         <div className="flex flex-col items-center md:flex-row md:items-center md:space-x-4 w-full">
           <div className="flex flex-col items-center md:flex-row md:items-center md:space-x-4">
             <Image
+              src="/images/twinnlandl-dark.png"
+              alt="Twinn L&L Logo"
+              width={100}
+              height={87}
+              className={`h-auto w-[100px] light:hidden`}
+            />
+            <Image
               src="/images/twinnlandl.png"
               alt="Twinn L&L Logo"
               width={100}
               height={87}
-              className="h-auto w-[100px]"
+              className={`h-auto w-[100px] dark:hidden`}
             />
-            <div className="text-center md:text-left text-sm md:text-sm lg:text-lg dark:text-red-500 mt-2 md:mt-0">
-            1776 Solano Ave Suite 122 - Vallejo, CA 94590&nbsp;&nbsp;
+            <div className="text-center md:text-left text-sm md:text-sm lg:text-lg dark:text-white-500 mt-2 md:mt-0">
+            1817 Capital Street - Vallejo, CA 94590&nbsp;&nbsp;
               <span className="whitespace-nowrap">
                 <PhoneCall size={20} className="inline-block" />{" "}
                 <a href="tel:707-332-9005" className="font-bold border-none">
@@ -102,7 +109,7 @@ export function NavbarComponent() {
           <li>
             <Link
               href="#"
-              className="block py-2 px-3 text-white bg-red-500 rounded-sm"
+              className="block py-2 px-3 text-white bg-red-500 dark:text-red-900 rounded-sm"
             >
               Inventory & Financing
             </Link>

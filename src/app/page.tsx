@@ -20,7 +20,7 @@ const cars: Car[] = [
     id: 1,
     image: '/images/vehicles/green-jeep.png',
     model: '2008 Jeep Patriot',
-    price: '$20,000',
+    price: '$14,900',
   },
   {
     id: 2,
@@ -91,7 +91,7 @@ const Home: NextPage = () => {
   return (
     <>
       <NavbarComponent />
-      <main className="mx-auto mt-24 lg:mt-10">
+      <main className="mx-auto mt-24 lg:mt-10 dark:bg-white">
       <section className="bg-center bg-no-repeat bg-[url('/images/openroadbkg.png')] bg-white bg-blend-luminosity bg-opacity-10">
         <div className="px-4 py-20 mx-auto max-w-screen-xl text-center lg:py-40">
   
@@ -101,17 +101,17 @@ const Home: NextPage = () => {
             Buy With Confidence!
           </h1>
         </div>
-        <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl dark:text-white">New Vehicles Added Daily</h1>
+        <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl dark:text-black">New Vehicles Added Daily</h1>
             {/* <h2 className="mb-4 text-xl font-extrabold tracking-tight leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-white">In-House Financing on Approved Credit</h2> */}
             <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Experience the personal touch of a locally run business that sources quality vehicles wholesale, ensuring you get unbeatable deals every time you buy, sell, or trade.</p>
             <div className="flex flex-col space-y-6 sm:flex-row sm:justify-center sm:space-y-0">
-                <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-black hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:focus:ring-red-900">
+                <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-black hover:bg-gray-500 focus:ring-4 focus:ring-red-300 dark:focus:ring-red-900">
                     View Our Inventory
                     <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                     </svg>
                 </a>
-                <a href="#" className="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-red-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                <a href="#" className="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-red-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-red-700 dark:text-red-100 dark:border-0 dark:hover:text-white dark:hover:bg-red-300">
                     Learn more
                 </a>  
             </div>
@@ -130,12 +130,12 @@ const Home: NextPage = () => {
             </div>
         </div>
         </section>
-        <div className='text-center mt-8'>
-            <p className="text-4xl text-gray-500 dark:text-gray-400">We Offer In-House Financing on Approved Credit
+        <div className='text-center mt-8 dark:bg-white'>
+            <p className="text-4xl text-gray-500 dark:text-black">We Offer In-House Financing on Approved Credit
             </p>
         </div> 
         <Image src="/images/logos.png" alt="alt" width="0" height="0" sizes="100vw" className="w-full h-auto" />
-        <h1 className="text-2xl font-bold mb-4 mx-4 lg:mx-4">Inventory For Sale:</h1>
+        <h1 className="text-2xl font-bold mb-4 dark:text-black mx-4 lg:mx-4">Inventory For Sale:</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-4 lg:mx-4">
           {cars.map((car) => (
             <CarCard key={car.id} image={car.image} model={car.model} price={car.price} />

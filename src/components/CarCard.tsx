@@ -20,7 +20,7 @@ const CarCard: React.FC<CarCardProps> = ({ image, model, price }) => {
         />
       </div>
       <div className="p-4">
-        <h3 className="text-lg font-semibold">{model}</h3>
+        <h3 className="text-lg font-semibold dark:text-black">{model}</h3>
         <p className="text-gray-600">{price}</p>
       </div>
     </div>
