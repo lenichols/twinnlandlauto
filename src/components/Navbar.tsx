@@ -40,10 +40,10 @@ export function NavbarComponent() {
 
               {/* Address and phone */}
               <div className="text-center md:text-left text-sm md:text-sm lg:text-lg dark:text-white mt-2 md:mt-0">
-                1817 Capital Street - Vallejo, CA 94590&nbsp;&nbsp;
+                1817 Capital Street, Ste A - Vallejo, CA 94590&nbsp;&nbsp;
                 <span className="whitespace-nowrap">
-                  <PhoneCall size={20} className="inline-block" />{' '}
-                  <a href="tel:707-332-9005" className="font-bold border-none">
+                  <PhoneCall size={20} className="inline-block text-red-600" />{' '}
+                  <a href="tel:707-332-9005" className="font-bold border-none text-red-600">
                     (866)-270-4582
                   </a>
                 </span>

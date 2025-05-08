@@ -13,7 +13,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     setStatus('loading');
   
     try {
-      const res = await fetch('https://formsubmit.co/sales@millennium-auto.com', {
+      const res = await fetch('https://formsubmit.co/sales@twinnlandlauto.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, message }),
@@ -88,7 +88,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
             </button>
           </div>
           {status === 'success' && (
-            <p className="mt-2 text-center text-green-600">Message sent successfully!</p>
+            <p className="mt-2 text-center text-green-300">Message sent successfully!</p>
           )}
           {status === 'error' && (
             <p className="mt-2 text-center text-red-600">There was an error sending your message.</p>

@@ -7,6 +7,8 @@ import { useEffect } from 'react';
 import { initFlowbite } from 'flowbite';
 import Image from 'next/image';
 import ContactForm from '@/components/ContactUsForm';
+import FinancingAndWholesaleSection from '@/components/FinancingAndWholesaleSection';
+import OwnerBioSection from '@/components/OwnerBioSection';
 
 interface Car {
   id: number;
@@ -18,54 +20,60 @@ interface Car {
 const cars: Car[] = [
   {
     id: 1,
+    image: '/images/vehicles/2016tesla.jpg',
+    model: '2015 Tesla Model S',
+    price: '$16,000',
+  },
+  {
+    id: 2,
     image: '/images/vehicles/green-jeep.png',
     model: '2008 Jeep Patriot',
     price: '$14,900',
   },
   {
-    id: 2,
+    id: 3,
     image: '/images/vehicles/white-toyota.png',
     model: '2017 Toyota Camry',
     price: '$15,300',
   },
   {
-    id: 3,
+    id: 4,
     image: '/images/vehicles/mercedes-suv.png',
     model: '2016 Mercedes Benz Gl45O',
     price: '$16,999',
   },
   {
-    id: 4,
+    id: 5,
     image: '/images/vehicles/mercedes-550-gray.png',
     model: '2011 Mercedes Benz CL550',
     price: '$14,999',
   },
   {
-    id: 5,
+    id: 6,
     image: '/images/vehicles/jeep.png',
     model: '2009 Volvo SUV',
     price: '$10,999',
   },
   {
-    id: 6,
+    id: 7,
     image: '/images/vehicles/2025jeep.jpg',
     model: '2015 Jeep Cherokee',
     price: '$13,999',
   },
   {
-    id: 7,
+    id: 8,
     image: '/images/vehicles/black-jaguar.png',
     model: '2010 Bentley Continental',
     price: '$26,999',
   },
   {
-    id: 8,
+    id: 9,
     image: '/images/vehicles/black-masarati.png',
     model: '2012 Maserati',
     price: '$18,777',
   },
   {
-    id: 9,
+    id: 10,
     image: '/images/vehicles/ford-caliber.png',
     model: '2020 Ford SUV',
     price: '$16,999',
@@ -92,7 +100,10 @@ const Home: NextPage = () => {
     <>
       <NavbarComponent />
       <main className="mx-auto mt-24 lg:mt-10 dark:bg-white">
-      <section className="bg-center bg-no-repeat bg-[url('/images/openroadbkg.png')] bg-white bg-blend-luminosity bg-opacity-10">
+      <section className="bg-no-repeat bg-[left_77%_top] bg-cover bg-[url('/images/twinn.jpg')] bg-white bg-blend-luminosity bg-opacity-10 h-screen w-screen ">
+        </section>
+
+        <section className="bg-center bg-cover bg-no-repeat bg-[url('/images/openroadbkg.png')] bg-white bg-blend-luminosity bg-opacity md:h-screen md:w-screen block sm:min-h-96">
         <div className="px-4 py-20 mx-auto max-w-screen-xl text-center lg:py-40">
   
         <div className="w-max mx-auto">
@@ -111,7 +122,7 @@ const Home: NextPage = () => {
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                     </svg>
                 </a>
-                <a href="#" className="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-red-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-red-700 dark:text-red-100 dark:border-0 dark:hover:text-white dark:hover:bg-red-300">
+                <a href="#finance" className="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-red-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-red-700 dark:text-red-100 dark:border-0 dark:hover:text-white dark:hover:bg-red-300">
                     Learn more
                 </a>  
             </div>
@@ -130,6 +141,8 @@ const Home: NextPage = () => {
             </div>
         </div>
         </section>
+        
+        <section>
         <div className='text-center mt-8 dark:bg-white'>
             <p className="text-4xl text-gray-500 dark:text-black">We Offer In-House Financing on Approved Credit
             </p>
@@ -141,6 +154,11 @@ const Home: NextPage = () => {
             <CarCard key={car.id} image={car.image} model={car.model} price={car.price} />
           ))}
         </div>
+        </section>
+        <section id="finance" className="bg-gray-100 dark:bg-gray-800">
+        <FinancingAndWholesaleSection />
+        <OwnerBioSection />
+        </section>
         <div id="contact_us"></div>
         <ContactForm />
       </main>
